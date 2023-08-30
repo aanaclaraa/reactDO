@@ -35,21 +35,25 @@ function App() {
 
   return (
     <>
-      <header>
+      <header className='fada'>
         <h1 className='titulo'>CHEKLIST</h1>
-        <h4>Enter your task:</h4>
-      </header>
+        <h3>DIGITE SUA TAREFA:</h3>
       <div> 
-          <input type="text" name="tarefa" placeholder='Enter your task:' value={tarefa.texto} onChange={ (e) => setTarefa( {id: Math.random(), texto: e.target.value, status: false } ) }/>
-          <button onClick={addTarefa}>Concluded</button>
-      </div>
-      <div>
-        <ul>
+          <input className="margin" type="text" name="tarefa" placeholder='Digite sua Tarefa:' value={tarefa.texto} onChange={ (e) => setTarefa( {id: Math.random(), texto: e.target.value, status: false } ) }/>
+        <div className="meme">
+          <button className="tiktok" onClick={addTarefa}>Concluído</button>
+        </div>        
+          <ul>
             {listatarefas.map( (item, index) => (
-                <li key={index}>{item.texto} <button onClick={ () => statusTarefa(item.id, item.status) }>{item.status ? 'Concluded' : 'Not Concluded'}</button> <button onClick={ () => excluirTarefa(item.id) }>Delet</button></li>
+                <li className="item" key={index}>
+                  <button  className="zero" onClick={ () => statusTarefa(item.id, item.status) }>{item.status ? 'Concluído' : 'Não Concluído'}</button> 
+                  <div className='textoTarefa'>{item.texto} </div>
+                  <button className="botao" onClick={ () => excluirTarefa(item.id) }>Excluir</button>
+                </li>
             ))}
         </ul>
       </div>
+      </header>
     </>
   );
 }

@@ -1,8 +1,57 @@
 body{
-    background-color: rgb(198, 255, 201);
+    background-color: rgb(255, 197, 207);
+}
+
+.fada{
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: rgb(255, 255, 221);
+    border: 1px solid rgb(249, 39, 204);
+    width: 25%;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 3% 3% 3%S rgb(255, 129, 129);
+}
+
+.titulo{
+    display: block;
+    border-radius: 15px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(103, 103, 247);
+    background-color: rgb(225, 168, 255);
+    box-shadow: 3px 3px 3px rgb(247, 154, 255);
+}
+
+.tiktok{
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.item {
+    list-style-type: none;
+    margin-top: 35px;
+    border-radius: 15px;
     text-align: center;
 }
-.titulo{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(114, 114, 255);
+
+.botao{
+    background-color: rgb(255, 68, 51);
+}
+
+.margin{
+    text-align: center;
+    width: 100px;
+    height: 150px;
+    text-align: center;
+}
+
+.textoTarefa{
+    text-align: center;
+    margin: 5px 0;
+    
+}
+
+.zero{
+    background-color: rgb(245, 122, 69);
 }
