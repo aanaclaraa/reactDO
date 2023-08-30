@@ -1,4 +1,8 @@
 body{
-    background-color: rgb(184, 255, 189);
+    background-color: rgb(198, 255, 201);
     text-align: center;
+}
+.titulo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(114, 114, 255);
 }
